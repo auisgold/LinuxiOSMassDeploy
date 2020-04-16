@@ -8,6 +8,7 @@ Mass deploy ipa to ios devices on Linux
 
 **Running script**
 1. Be sure to edit signed-ipa.ipa in deploy.sh to the ipa that you want to deploy to the iOS devices. 
+2. Also need to edit DS_Store.plist file in Payload folder of ipa to DS_StoreInfo.plst for deploy to work. 
 2. chmod +x deploy.sh
 3. ./deploy.sh
 4. Watch as ipa gets deployed to devices (sometimes the script will get stuck and you will have to ctrl+c and run it again)
